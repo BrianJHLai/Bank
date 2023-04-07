@@ -1,0 +1,58 @@
+The user is a customer. The program is for customer use, NOT for employee use
+
+-Open an account
+	-Account holder (Name)
+	-PIN
+	-Account ID number
+	-Checking Balance
+	-Savings Balance
+		-Increases with yearly interest, which increases over time
+		-Current: Interest = Savings Balance * 0.01 * # of years the account has been open
+	-Cycle day
+		-Starts at 1, and resets to 1 upon reaching 31
+		-Number increases by 1 every midnight
+	-Days open
+		-Number of days the account has been open
+		-Used when determining if a year has passed since the account was opened, for yearly interest
+		-Number increases by 1 every midnight
+	-Savings withdrawals remaining
+		-Current: Hard limit of 5 withdrawals
+		-Resets every 30 days (Cycle days)
+-Deposit
+	-Displays checking balance and savings balance
+	-Deposit money into either checkings, or savings
+-Withdraw
+	-Displays checking balance and savings balance
+	-Withdraws money from either checkings, or savings
+		-If 5 withdrawals from the savings account has been made in the current cycle, no money will be withdrawn
+-Show account details
+	-Account holder
+	-Checkings balance
+	-Savings balance
+-Change account details
+	-Change account holder
+	-Change PIN
+-Save/load
+	-Save
+		-Saves date the save file was made/changed
+		-Saves each Account object's attributes
+	-Load
+		-Remakes every Account object that is within the text file
+		-Increases every Account object's cycle_days and days_open by the number of days that have passed
+		between the save date and the load date
+
+-Map the accounts. Key is account id, value is Account object.
+
+Interest
+	-Simple = prinicipal * interest rate * time
+		300,000 * 4% * 30 yrs = 360,000 in interest payments (Pay total of 660,000?)
+	-Compound = principal * [(1 + interest rate)^n - 1], n = # of compounding periods
+		300,00 * [5^n - 1] = 700,000 (?)
+Types of accounts
+	-Checking
+		-
+	-Savings
+		-Compounded interest
+			If bank takes 4% IR from a borrower, bank give 1% to saving account owner, for net of 3%
+
+

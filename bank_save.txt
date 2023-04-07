@@ -1,0 +1,10 @@
+Data saved on 2023-04-05
+
+Name: LB
+ID: 1
+PIN: 1234
+Balance (Checking): 0.0
+Balance (Savings): 0.0
+Days Open: 1
+Current Cycle Day: 1
+Withdraws this cycle: 0
