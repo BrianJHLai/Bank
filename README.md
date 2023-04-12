@@ -1,5 +1,5 @@
 # Bank
-Self-made project in Java, attempting to simulate a bank's database of customers' accounts
+Individual independent project written in Java on Eclipse, attempting to simulate a bank's database of customers' accounts
 
 Account Attributes
 1. name - Account holder name
