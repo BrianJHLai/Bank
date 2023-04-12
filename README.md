@@ -1,6 +1,17 @@
 # Bank
 Self-made project in Java, attempting to simulate a bank's database of customers' accounts
 
+Account Attributes
+1. name - Account holder name
+2. id - A number associated with the Account, used to keep track of which Account object a user wishes to interact with
+3. days_open - How many days that the Account object has existed
+4. c_balance - How much money is within the Account's checking balance
+5. s_balance - How much money is within the Account's savings balance
+6. cycle_days - How many days the Account has been into a 30-day cycle; resets to 1 once the attribute hits 31
+7. s_withdrawals - How many withdrawals from the savings balance have been made in the current cycle. Hard limit of 5 per cycle. Resets to 0 upon the start of a new cycle
+9. pin - A 4-character long string comprised of digits that acts as a password for the Account
+
+Main Menu Options
 1. Open an account - Creates an Account object
   -Asks for user input for account holder name and a 4-digit PIN
   -Asks the user if a deposit should immedietely be made, to cchecking or savings, and how much
@@ -40,5 +51,5 @@ Self-made project in Java, attempting to simulate a bank's database of customers
 
 8. Load - Asked on start-up, replying 'y' will result in the recreation of accounts that were saved in 'bank_save.txt'
   -The load will occur before the user is given access to the main menu
-  -The load will also update every account's cycle_days, days_open, s_withdrawals, and savings_balance attributes based on how much time has 
+  -The load will also update every account's cycle_days, days_open, s_withdrawals, and s_balance attributes based on how much time has 
   passed since the save was made
